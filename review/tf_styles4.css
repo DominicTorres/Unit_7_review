@@ -4,8 +4,8 @@
    Tutorial 5
    Review Assignment
    
-   Author:   
-   Date:     
+   Author:Dominic Torres   
+   Date: 10/29/19   
       
    Filename: tf_styles4.css
 
@@ -22,9 +22,25 @@
 
 
 /* General Flex Styles */
+/*step7*/
+body{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-box: row wrap;
+   flex-flow: row wrap;
+}
 
-
-
+/*step8*/
+section#left{
+   -webkit-flex: 1 8 351px;
+   flex: 1 8 351px;
+}
+/*step9*/
+section#right{
+   -webkit-flex: 8 1 351px;
+   flex: 8 1 351px;
+}
+/*step10*/
 
 
 
