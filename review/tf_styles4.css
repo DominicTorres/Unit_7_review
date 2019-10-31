@@ -29,11 +29,10 @@ body{
    -webkit-flex-box: row wrap;
    flex-flow: row wrap;
 }
-
 /*step8*/
 section#left{
-   -webkit-flex: 1 8 351px;
-   flex: 1 8 351px;
+   -webkit-flex: 1 8 130px;
+   flex: 1 8 130px;
 }
 /*step9*/
 section#right{
@@ -42,15 +41,70 @@ section#right{
 }
 /*step10*/
 section.tips{
-   
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-box: row wrap;
+   flex-flow: row wrap;
+}
+/*step11*/
+article{
+   -webkit-flex: 2 1 351px;
+   flex: 2 1 351px;
+}
+/*step12*/
+aside{
+   -webkit-flex: 1 2 250px;
+   flex: 1 2 250px;;
+}
+/*step13*/
+nav.horizontal ul{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex: row wrap;
+   flex-flow: row wrap;
 }
 
+a#navicon{
+   display: block;
+}
 
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
 */
-	
+/*step14*/
+@media only screen and (max-width:480px){
+/*step15*/   
+   ul.vertical nav{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-box: row wrap;
+      flex-flow: row wrap;
+      height: 240px;
+   }
+
+   section#left{
+      order: 99;
+   }
+
+   footer{
+      order: 100;
+   }
+
+   /*step16*/
+   a#navicon{
+      display: block;
+   }
+
+   nav.horizontal ul{
+      display: none;
+   }
+
+   a#navicon:hover+ul, nav.horizontal ul:hover{
+      display: block;
+   }
+
+}
 
 
 
@@ -59,6 +113,11 @@ section.tips{
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
+/*step17*/
+@media only screen and (max-width: 481px){
+   nav.horizontal ul{
+      height: 160px;
+   }
+}
 
 
